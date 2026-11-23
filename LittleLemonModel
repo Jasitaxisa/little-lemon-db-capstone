@@ -1,0 +1,13 @@
+Customers (CustomerID PK, FullName, ContactNumber, Email, City, Country, PostalCode)
+
+Bookings (BookingID PK, BookingDate, TableNumber, CustomerID FK)
+
+MenuItems (MenuItemID PK, CourseName, CuisineName, StarterName, DesertName, Drink, Sides, Price)
+
+Menus (MenuID PK, MenuName, MenuItemID FK)
+
+Orders (OrderID PK, OrderDate, DeliveryDate, Quantity, TotalCost, Discount, DeliveryCost, MenuID FK, CustomerID FK)
+
+OrderDeliveryStatus (DeliveryID PK, OrderID FK, DeliveryDate, Status)
+
+Staff (StaffID PK, FullName, Role, Salary)
